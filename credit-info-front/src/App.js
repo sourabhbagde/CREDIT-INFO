@@ -1,9 +1,11 @@
 import './App.css';
+import NavigationBar from './components/NavigationBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      {/* here title is passed as props to NavigrationBar.jsx */}
+      <NavigationBar title="Credit Info" />
     </div>
   );
 }
