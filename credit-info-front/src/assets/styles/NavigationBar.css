@@ -1,0 +1,36 @@
+/* ul list is aligned horizontal to title. */
+.nav ul {
+  display: inline-flex;
+  /* padding: 0; */
+  margin: 0;
+  list-style-type: none;
+}
+
+.title {
+  color: rgb(17, 178, 111);
+  text-decoration: none;
+}
+/* currently styling all links in nav - removing it's decoration. */
+.nav-list a {
+  text-decoration: none;
+  color: black;
+}
+/* navigation bar is styled. */
+header.header-bar {
+  display: flex;
+  background-color: rgb(250, 251, 252);
+  padding: 15px;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* gap between list of nav bar contents (except title) */
+ul.nav-list {
+  gap: 2rem;
+}
+
+/* profile dropdown */
+select.profile-dropdown {
+  align-items: end;
+}
