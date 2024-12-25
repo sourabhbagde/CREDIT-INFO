@@ -1,29 +1,35 @@
 import React from 'react';
 import '../assets/styles/NavigationBar.css';
+import { NavLink } from 'react-router-dom';
 // here props are recieved from App.js
 function NavigationBar(props) {
   return (
     <header className="header-bar">
       <nav className="nav">
-        <a href="/" className="title">
+        <NavLink to="/" className="title">
           {/* the props passed from App.js it's title is shown here. */}
           {props.title}
-        </a>
+        </NavLink>
         <ul className="nav-list">
           <li>
-            <a href="/" className="home">
+            <NavLink to="/" className="home">
               Home
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/my-cards" className="my-cards">
+            <NavLink to="/my-cards" className="my-cards">
               My Cards
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="/search-bar" className="search-bar">
-              Search Bar
-            </a>
+            <NavLink to="/spending-tracker" className="spending-tracker">
+              Spending Tracker
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/settings" className="settings">
+              Settings
+            </NavLink>
           </li>
         </ul>
       </nav>
