@@ -12,25 +12,37 @@ function NavigationBar(props) {
         </NavLink>
         <ul className="nav-list">
           <li>
-            <NavLink to="/" className="home">
+            <NavLink
+              to="/home"
+              className={({ isActive }) => (isActive ? 'active' : 'home')}
+            >
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="/my-cards" className="my-cards">
+            <NavLink
+              to="/my-cards"
+              // here isActive
+              className={({ isActive }) => (isActive ? 'active' : 'my-cards')}
+            >
               My Cards
             </NavLink>
           </li>
           <li>
-            <NavLink to="/spending-tracker" className="spending-tracker">
+            <NavLink
+              to="/spending-tracker"
+              className={({ isActive }) =>
+                isActive ? 'active' : 'spending-tracker'
+              }
+            >
               Spending Tracker
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/settings" className="settings">
+          {/* <li>
+            <NavLink to="/settings" className="Settings">
               Settings
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <select className="profile-dropdown">

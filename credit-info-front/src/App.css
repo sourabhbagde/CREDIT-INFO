@@ -2,6 +2,66 @@
   box-sizing: border-box;
 }
 
+/* adjusting the height and width of the page for 100 x 100 */
+.app {
+  width: 100vw;
+  height: 100vh;
+}
 body {
   margin: 0;
+  padding: 0;
+}
+
+/* applying styling for sidebar menu in App.css for global singular use. */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: #083044;
+}
+.sidebar-ul {
+  padding: 0px;
+  height: auto;
+  width: 100%;
+}
+
+.sidebar-ul .sidebar-list {
+  list-style-type: none;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  margin: 0%;
+}
+/* applying styling for sidebar links in App.css for global singular use. */
+.sidebar-link {
+  text-decoration-line: none;
+  list-style-type: none;
+  color: white;
+  font-size: medium;
+  display: flex;
+  flex-direction: row;
+  /* aligning contents with icons and title at centre. */
+  justify-content: center;
+  align-items: center;
+}
+/* on hover the sidebar option changes color */
+.sidebar-link:hover {
+  color: rgb(149, 210, 185);
+}
+.sidebar-list:hover {
+  /* color: rgb(17, 178, 111); */
+  background-color: #0c415b;
+}
+
+.sidebar-link #icon {
+  flex: auto;
+}
+.sidebar-link #title {
+  flex: 70%;
+}
+
+.nav-list .active {
+  color: rgb(17, 178, 111);
+}
+.sidebar-list .active {
+  color: rgb(17, 178, 111);
 }
