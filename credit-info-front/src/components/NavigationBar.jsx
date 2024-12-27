@@ -9,6 +9,8 @@ function NavigationBar(props) {
         <NavLink to="/" className="title">
           {/* the props passed from App.js it's title is shown here. */}
           {props.title}
+          {/*  the side bar data are shown in side bar also the contents are same
+          in the NavigationBar.jsx - sync with NavigationBar and SideBar */}
         </NavLink>
         <ul className="nav-list">
           <li>

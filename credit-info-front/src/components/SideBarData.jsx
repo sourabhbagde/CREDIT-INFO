@@ -7,6 +7,7 @@ import AddIcon from '@mui/icons-material/Add';
 //  a data array of SideBar contents are created.
 export const SideBarData = [
   {
+    // the side bar data are shown in side bar also the contents are same in the NavigationBar.jsx
     // each content tab has assigned a title with an icon.
     title: 'Home',
     icon: <HomeIcon />,

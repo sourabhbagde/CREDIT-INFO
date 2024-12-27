@@ -1,6 +1,7 @@
 import React from 'react';
 import { SideBarData } from './SideBarData';
 import { NavLink } from 'react-router';
+import '../assets/styles/SideBar.css';
 const SideBar = () => {
   return (
     <div className="sidebar">
@@ -11,14 +12,20 @@ const SideBar = () => {
             <li
               key={key}
               className="sidebar-list"
-              id={window.location.pathname === val.link ? 'active' : ''}
+              // id={window.location.pathname === val.link ? 'active' : ''}
             >
               {/* onClick={() => {
                 window.location.pathname = val.link;
               }}
              */}
               {/* here respective icon/title if clicked/navigated -> it's link is rendered */}
-              <NavLink to={val.link} className="sidebar-link">
+              {/* <NavLink to={val.link} className="sidebar-link"> */}
+              <NavLink
+                to={val.link}
+                className={({ isActive }) =>
+                  isActive ? 'active' : 'sidebar-link'
+                }
+              >
                 {' '}
                 {/* allowing them into same div tag for side-side show.*/}
                 {/* Changes - took back to different div and used flex in css.*/}
