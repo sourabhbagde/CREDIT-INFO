@@ -1,8 +1,10 @@
 /* applying styling for sidebar menu in App.css for global singular use. */
-.sidebar {
+.sidebar.visible {
+  animation: 2ms;
   height: 100%;
   width: 250px;
   background-color: #083044;
+  position: fixed;
 }
 .sidebar-ul {
   padding: 0px;
@@ -63,4 +65,9 @@
 
 .sidebar-list .active #title {
   margin-left: 20px;
+}
+.sidebar-toggle {
+  color: rgb(17, 178, 111);
+
+  position: fixed;
 }
