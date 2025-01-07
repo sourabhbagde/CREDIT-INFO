@@ -1,10 +1,12 @@
 import React from 'react';
 import '../assets/styles/NavigationBar.css';
 import { NavLink } from 'react-router-dom';
+import MenuIcon from '@mui/icons-material/Menu';
 // here props are recieved from App.js
 function NavigationBar(props) {
   return (
     <header className="header-bar">
+      <MenuIcon className="menu-icon" />
       <nav className="nav">
         <NavLink to="/" className="title">
           {/* the props passed from App.js it's title is shown here. */}
