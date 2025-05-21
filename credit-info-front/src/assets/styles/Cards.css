@@ -1,0 +1,15 @@
+.add-card {
+  height: 100%;
+  width: 50%;
+}
+.my-card {
+  color: green;
+  height: 100%;
+  width: 50%;
+  align-items: end;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+}
