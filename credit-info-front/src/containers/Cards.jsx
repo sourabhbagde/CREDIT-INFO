@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/styles/Cards.css';
+import { MYCARDS } from '../utils/constants.js';
 const AddCard = () => {
   return (
     <>
@@ -19,7 +20,7 @@ const AddCard = () => {
           </form>
         </div>
         <div className="my-card">
-          <h1>My Cards</h1>
+          <h1>{MYCARDS}</h1>
         </div>
       </div>
     </>

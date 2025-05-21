@@ -73,3 +73,7 @@
 
   position: fixed;
 }
+
+.sidebar {
+  overflow: hidden;
+}

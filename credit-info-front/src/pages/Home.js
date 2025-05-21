@@ -1,7 +1,12 @@
 import React from 'react';
+import { HOME } from '../utils/constants.js';
 
 const Home = () => {
-  return <h1>Home - Temp page</h1>;
+  return (
+    <div className="home-page">
+      <h2>{HOME}</h2>
+    </div>
+  );
 };
 
 export default Home;
