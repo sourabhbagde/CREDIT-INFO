@@ -1,12 +1,20 @@
 import React from 'react';
 import '../assets/styles/NavigationBar.css';
 import { NavLink } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
+// import MenuIcon from '@mui/icons-material/Menu';
+import {
+  PROFILE,
+  LOGOUT,
+  HOME,
+  MYCARDS,
+  SPENDINGTRACKER,
+} from '../utils/constants';
+
 // here props are recieved from App.js
 function NavigationBar(props) {
   return (
     <header className="header-bar">
-      <MenuIcon className="menu-icon" />
+      {/* <MenuIcon className="menu-icon" /> */}
       <nav className="nav">
         <NavLink to="/" className="title">
           {/* the props passed from App.js it's title is shown here. */}
@@ -17,10 +25,10 @@ function NavigationBar(props) {
         <ul className="nav-list">
           <li>
             <NavLink
-              to="/home"
+              to="/"
               className={({ isActive }) => (isActive ? 'active' : 'home')}
             >
-              Home
+              {HOME}
             </NavLink>
           </li>
           <li>
@@ -29,7 +37,7 @@ function NavigationBar(props) {
               // here isActive
               className={({ isActive }) => (isActive ? 'active' : 'my-cards')}
             >
-              My Cards
+              {MYCARDS}
             </NavLink>
           </li>
           <li>
@@ -39,19 +47,14 @@ function NavigationBar(props) {
                 isActive ? 'active' : 'spending-tracker'
               }
             >
-              Spending Tracker
+              {SPENDINGTRACKER}
             </NavLink>
           </li>
-          {/* <li>
-            <NavLink to="/settings" className="Settings">
-              Settings
-            </NavLink>
-          </li> */}
         </ul>
       </nav>
       <select className="profile-dropdown">
-        <option>profile</option>
-        <option>log out</option>
+        <option>{PROFILE}</option>
+        <option>{LOGOUT}</option>
       </select>
     </header>
   );
