@@ -1,4 +1,6 @@
-/* applying styling for sidebar menu in App.css for global singular use. */
+/* 
+* applying styling for sidebar menu in App.css for global singular use. 
+*/
 .sidebar.visible {
   animation: 2ms;
   height: 100%;
