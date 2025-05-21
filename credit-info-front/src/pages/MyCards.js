@@ -1,7 +1,12 @@
 import React from 'react';
+import Cards from '../containers/Cards';
 
 const MyCards = () => {
-  return <h1>My Cards Page - Temp Page</h1>;
+  return (
+    <>
+      <Cards />
+    </>
+  );
 };
 
 export default MyCards;

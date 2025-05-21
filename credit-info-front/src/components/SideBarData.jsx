@@ -14,7 +14,7 @@ export const SideBarData = [
     title: 'Home',
     icon: <HomeIcon />,
     // where to navigate.
-    link: '/home',
+    link: '/',
   },
   {
     title: 'My Cards',

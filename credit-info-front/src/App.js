@@ -6,6 +6,7 @@ import MyCards from './pages/MyCards';
 import SpendingTracker from './pages/SpendingTracker';
 import Settings from './pages/Settings';
 import SideBar from './components/SideBar';
+import { TITLE } from './utils/constants';
 
 function App() {
   return (
@@ -14,8 +15,7 @@ function App() {
         {/* rendering the NavigationBar inside the Router */}
         {/* title is passed as props to NavigrationBar.jsx */}
 
-        <NavigationBar title="Credit Info" />
-
+        <NavigationBar title={TITLE} />
         <SideBar />
 
         <Routes>
